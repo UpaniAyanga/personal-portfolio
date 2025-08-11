@@ -35,7 +35,7 @@ export default function ClientLayout({
           }
         `}</style>
       </head>
-      <body className="min-h-screen bg-background font-mono antialiased">
+      <body className="min-h-screen bg-background font-mono antialiased suppressHydrationWarning">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
           <div className="relative flex min-h-screen flex-col overflow-hidden">
             <noscript>

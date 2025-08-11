@@ -4,26 +4,30 @@ import Skills from "./skills-content"
 
 export default function Experience() {
   const experiences = [
-  
     {
       title: "Co-Founder & Project Manager",
-      company: "Beyond Tech",
+      company: "Beyond Tech, Sri Lanka",
       period: "June 2025 - Present",
       location: "Sri Lanka",
+      logo: "/logos/beyond-tech.png",
+      link: "https://beyondtech.com",
       achievements: [
-        "Led and managed a diverse software development team comprising over 15 members",
+        "Successfully launched a tech startup focused on innovative software solutions",
+        "Currently working with 2 major clients, delivering high-quality software products",
+        "Developed and managed multiple projects from concept to completion, ensuring alignment with business goals",
         "Designed and implemented solutions that consistently exceeded performance benchmarks",
-        "Streamlined project planning by working closely with product owners",
+        "Streamlined project planning by working closely with stakeholders to define clear requirements and deliverables",
         "Orchestrated the successful release of major application versions",
         "Emerged as the primary point of contact for both project stakeholders and management",
       ],
     },
     {
       title: "Associate Software Engineer",
-      company: "XGEN GROUP",
       period: "Nov 2023 - Aug 2025",
-      location: "Australia",
-      products: " Smart Credit, Smart Collect, SmartOps App",
+      company: "XGen Group, Australia",
+      products: "Smart Credit, Smart Collect, SmartOps App",
+      logo: "/logos/xgen-logo.png",
+      link: "https://xgengroup.com.au",
       achievements: [
         "Designed and implemented dashboards and custom reports for real-time business insights.",
         "Created complex SQL queries for advanced analytics and reporting requirements.",
@@ -42,10 +46,11 @@ export default function Experience() {
     },
     {
       title: "Software Engineer Intern",
-      company: "XGEN GROUP",
+      company: "XGen Group, Australia",
       period: "April 2023 - November 2023",
-      location: "Australia",
       products: "Smart Trade Credit, Smart Signature",
+      logo: "/logos/xgen-logo.png",
+      link: "https://xgengroup.com.au",
       achievements: [
         "Clients : Fletcher, Tradelink, Laminex, United Petroleum, Equifax, Cookers",
         "Assisted with maintenance tasks and implemented Change Requests (CRs) to improve business workflows.",
@@ -75,16 +80,24 @@ export default function Experience() {
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                       <div>
                         <h3 className="text-xl font-bold">{experience.title}</h3>
-                        <p className="text-muted-foreground">{experience.company}</p>
-                        <p className="text-muted-foreground">{experience.products}</p>
+                        <div className="flex items-center space-x-2 mt-1">
+                          <p className="text-muted-foreground">{experience.company}</p>
+                        </div>
+                        {experience.products && (
+                          <p className="text-muted-foreground">{experience.products}</p>
+                        )}
                       </div>
+
                       <div className="mt-2 md:mt-0 flex flex-col md:items-end">
+                        <a href={experience.link} target="_blank" rel="noopener noreferrer">
+                          <img src={experience.logo} alt={`${experience.company} logo`} className="h-8 w-auto mb-2" />
+                        </a>
                         <Badge variant="outline" className="mb-1 md:mb-0">
                           {experience.period}
                         </Badge>
-                        <span className="text-sm text-muted-foreground">{experience.location}</span>
                       </div>
                     </div>
+
                     <ul className="mt-4 space-y-2">
                       {experience.achievements.map((achievement, i) => (
                         <li key={i} className="flex items-start">

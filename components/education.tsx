@@ -8,7 +8,7 @@ import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 
-// Sample badge images: replace these URLs with your actual badge image URLs or imports
+
 const badges = [
   {
     title: "AWS Certified Cloud Practitioner",
@@ -23,7 +23,7 @@ const badges = [
     link: "https://badgr.com/public/assertions/Fz-byWUhSxuPQ8PQwAmwYA"
   },
   {
-    title: "Cambridge Exam Badges",
+    title: "Cambridge Exams",
     description: "Achieved high scores in Cambridge English exams demonstrating proficiency in English. (Starters, Movers, Flyers, KET, PET, FCE)",
     imgSrc: "/badges/cambridge.png",
   },
@@ -73,6 +73,7 @@ export default function Education() {
               modules={[Navigation, Pagination]}
               navigation
               pagination={{ clickable: true }}
+              loop
               spaceBetween={30}
               slidesPerView={1}
               breakpoints={{

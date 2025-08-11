@@ -9,19 +9,19 @@ export default function SkillsContent() {
     },
     {
       category: "Backend",
-      skills: ["Node.js", "PHP", "Laravel", "Express.js", "RESTful APIs"],
+      skills: ["Node.js", "PHP", "Laravel", "RESTful APIs"],
     },
     {
       category: "Database",
-      skills: ["MySQL", "PostgreSQL", "DynamoDB", "MongoDB", "Redis"],
+      skills: ["MySQL", "PostgreSQL", "MsSQL", "MongoDB"],
     },
     {
       category: "Cloud & DevOps",
-      skills: ["AWS", "GitHub Actions", "Travis-CI", "Docker", "CI/CD"],
+      skills: ["AWS", "GitHub Actions", "Docker", "CI/CD"],
     },
     {
       category: "Tools & Methodologies",
-      skills: ["Git", "Agile", "Scrum", "JIRA", "Figma"],
+      skills: ["Git", "Agile", "Postman", "Scrum", "JIRA", "Figma"],
     },
   ]
 
