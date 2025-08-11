@@ -10,7 +10,7 @@ export default function Experience() {
       period: "June 2025 - Present",
       location: "Sri Lanka",
       logo: "/logos/beyond-tech.png",
-      link: "https://beyondtech.com",
+      link: "https://beyondtech.com.lk/",
       achievements: [
         "Successfully launched a tech startup focused on innovative software solutions",
         "Currently working with 2 major clients, delivering high-quality software products",
