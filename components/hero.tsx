@@ -7,7 +7,7 @@ import React, { useState, useEffect } from "react";
 
 export default function Hero() {
      const sentences = [
-    "Full Stack Web Developer",
+    "Web Developer",
     "Project Manager",
     "Technical Writer"
   ];
@@ -94,7 +94,7 @@ useEffect(() => {
               Welcome, I&apos;m <span className="gradient-text">Upani Lokusuriya</span>
             </h1>
             <p className="mx-auto max-w-[800px] text-2xl text-muted-foreground md:text-3xl font-light">
-               {mounted ? text : "Full Stack Web Developer"} 
+               {mounted ? text : "Web Developer"} 
               <span className="cursor">|</span>
             </p>
             <style jsx>{`
@@ -125,9 +125,9 @@ useEffect(() => {
               <Link href="#contact">Get In Touch</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="rounded-full px-8 py-6 text-lg bg-transparent">
-              <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="/upani_lokusuriya_resume.pdf" target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2 h-5 w-5" /> Download Resume
-              </a>
+                </a>
             </Button>
           </div>
 
