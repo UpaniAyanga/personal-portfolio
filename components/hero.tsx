@@ -7,8 +7,7 @@ import React, { useState, useEffect } from "react";
 
 export default function Hero() {
      const sentences = [
-    "Web Developer",
-    "Project Manager",
+    "Software Engineer",
     "Technical Writer"
   ];
 
@@ -64,13 +63,13 @@ useEffect(() => {
             <div className="group px-4 py-2 bg-gradient-to-r from-blue-500/10 to-blue-600/10 text-blue-600 rounded-full border border-blue-500/20 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-                <span className="text-xs font-semibold">2+ Years Experience</span>
+                <span className="text-xs font-semibold">2.8 Years of Working Experience</span>
               </div>
             </div>
             <div className="group px-4 py-2 bg-gradient-to-r from-green-500/10 to-green-600/10 text-green-600 rounded-full border border-green-500/20 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-xs font-semibold">Full Stack Developer</span>
+                <span className="text-xs font-semibold">Full Stack Software Engineer</span>
               </div>
             </div>
             <div className="group px-4 py-2 bg-gradient-to-r from-orange-500/10 to-orange-600/10 text-orange-600 rounded-full border border-orange-500/20 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">

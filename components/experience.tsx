@@ -52,7 +52,6 @@ export default function Experience() {
       logo: "/logos/xgen-logo.png",
       link: "https://xgengroup.com.au",
       achievements: [
-        "Clients : Fletcher, Tradelink, Laminex, United Petroleum, Equifax, Cookers",
         "Assisted with maintenance tasks and implemented Change Requests (CRs) to improve business workflows.",
         "Supported a major PHP version upgrade from 5.5 to 8.2, ensuring code compatibility and improved performance.",
         "Worked with jQuery to enhance user interaction and frontend responsiveness.",

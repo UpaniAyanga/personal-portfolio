@@ -33,7 +33,7 @@ export default function About() {
             <div className="space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
               <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Experienced Associate Software Engineer with over two years of hands-on Full Stack Development experience, specializing in JavaScript, TypeScript, PHP, Laravel, and AWS.
+                Experienced Associate Software Engineer with almost three years of hands-on Full Stack Development experience, specializing in JavaScript, TypeScript, PHP, Laravel, and AWS.
               </p>
             </div>
 
