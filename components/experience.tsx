@@ -23,7 +23,7 @@ export default function Experience() {
     // },
     {
       title: "Associate Software Engineer",
-      period: "Nov 2023 - Aug 2025",
+      period: "Nov 2023 - Nov 2025",
       company: "XGen Group, Australia",
       products: "Smart Credit, Smart Collect, SmartOps App",
       logo: "/logos/xgen-logo.png",
