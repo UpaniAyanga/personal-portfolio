@@ -98,7 +98,7 @@ export default function Education() {
                 </div>
                 <div className="p-6">
                   <p className="text-muted-foreground">
-                   BAchieved 8 Distinction Passes (As) and 1 Very Good Pass (B) with basket subjects English Literature, Commerce and ICT</p>
+                   Achieved 8 Distinction Passes (As) and 1 Very Good Pass (B) with basket subjects English Literature, Commerce and ICT</p>
                 </div>
               </CardContent>
             </Card>

@@ -143,7 +143,7 @@ export default function Hero() {
                 className="rise text-2xl font-light text-muted-foreground md:text-3xl"
                 style={{ ["--d" as string]: "0.85s" }}
               >
-                {mounted ? text : "Stratergy to Successful Deliver"}
+                {mounted ? text : "Strategy to Successful Deliver"}
                 <span className="cursor">|</span>
               </p>
             </div>
