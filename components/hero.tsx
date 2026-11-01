@@ -225,28 +225,28 @@ export default function Hero() {
           </div>
 
           {/* ───────── Portrait column ───────── */}
-          <div className="order-1 -mt-12 flex justify-center translate-x-3 lg:order-2 lg:-mt-16 lg:translate-x-6 lg:justify-end">
-            {/* Outer wrapper: driven by scroll */}
-            <div ref={imageRef} className="will-change-transform">
-              {/* Inner wrapper: one-time entrance */}
-              <div className="pop relative aspect-square w-60 sm:w-72 md:w-80 lg:w-[30rem]">
-                {/* Soft glow that picks up the blue of the photo */}
-                <div className="absolute inset-6 -z-10 rounded-full bg-blue-400/30 blur-3xl" />
+        <div className="order-1 mt-10 flex justify-center translate-x-2 lg:order-2 lg:mt-[-4rem] lg:translate-x-6 lg:justify-end">
+          {/* Outer wrapper: driven by scroll */}
+          <div ref={imageRef} className="will-change-transform">
+            {/* Inner wrapper: one-time entrance */}
+            <div className="pop relative aspect-square w-48 sm:w-56 md:w-72 lg:w-[30rem]">
+              {/* Soft glow that picks up the blue of the photo */}
+              <div className="absolute inset-6 -z-10 rounded-full bg-blue-400/30 blur-3xl" />
 
-                {/* Slowly rotating dashed ring */}
-                <div className="spin absolute -inset-3 rounded-full border-2 border-dashed border-blue-400/50 md:-inset-4" />
+              {/* Slowly rotating dashed ring */}
+              <div className="spin absolute -inset-3 rounded-full border-2 border-dashed border-blue-400/50 md:-inset-4" />
 
-                <Image
-                  src="/upani-profile.png"
-                  alt="Portrait of Upani Lokusuriya"
-                  fill
-                  priority
-                  sizes="(min-width: 1024px) 416px, (min-width: 768px) 320px, 240px"
-                  className="rounded-full object-cover shadow-2xl shadow-blue-500/20"
-                />
-              </div>
+              <Image
+                src="/upani-profile.png"
+                alt="Portrait of Upani Lokusuriya"
+                fill
+                priority
+                sizes="(min-width: 1024px) 416px, (min-width: 768px) 288px, 224px"
+                className="rounded-full object-cover shadow-2xl shadow-blue-500/20"
+              />
             </div>
           </div>
+        </div>
         </div>
       </div>
 
