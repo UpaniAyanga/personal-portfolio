@@ -7,7 +7,7 @@ import Link from "next/link"
 import React, { useEffect, useRef, useState } from "react"
 
 // Defined outside the component so the typing effect doesn't restart on every render
-const SENTENCES = ["Stratergy to Successful Delivery"]
+const SENTENCES = ["Strategy to Successful Delivery"]
 
 const BADGES = [
   {
