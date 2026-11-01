@@ -50,8 +50,8 @@ export default function Education() {
                     <GraduationCap className="h-8 w-8 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold">Bachelor of Science: Computer Science (reading)</h3>
-                    <p className="text-muted-foreground">University of Westminster (2023 - 2028)</p>
+                    <h3 className="text-xl font-bold">Bachelor of Science(Hons) in Computer Science</h3>
+                    <p className="text-muted-foreground">University of Westminster </p>
                     <p className="text-muted-foreground">Associated with IIT</p>
                   </div>
                 </div>
@@ -64,7 +64,45 @@ export default function Education() {
                 </div>
               </CardContent>
             </Card>
-          </div>
+            </div>
+          <div className="max-w-3xl mx-auto">
+            <Card className="overflow-hidden">
+              <CardContent className="p-0">
+                <div className="bg-primary/10 p-6 flex items-center gap-4">
+                  <div className="bg-primary/20 p-3 rounded-full">
+                    <GraduationCap className="h-8 w-8 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold">GCE Advanced Level</h3>
+                    <p className="text-muted-foreground">St. Paul's Girls School, Milagiriya </p>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <p className="text-muted-foreground">
+                   Biological Stream (Physics, Chemistry, Biology)</p>
+                </div>
+              </CardContent>
+            </Card>
+           </div>
+           <div className="max-w-3xl mx-auto">
+            <Card className="overflow-hidden">
+              <CardContent className="p-0">
+                <div className="bg-primary/10 p-6 flex items-center gap-4">
+                  <div className="bg-primary/20 p-3 rounded-full">
+                    <GraduationCap className="h-8 w-8 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold">GCE Ordinary Level</h3>
+                    <p className="text-muted-foreground">Vidura College, Colombo</p>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <p className="text-muted-foreground">
+                   BAchieved 8 Distinction Passes (As) and 1 Very Good Pass (B) with basket subjects English Literature, Commerce and ICT</p>
+                </div>
+              </CardContent>
+            </Card>
+           </div>
 
           {/* Badges Slider */}
           <div className="max-w-4xl mx-auto mt-12">

@@ -2,28 +2,86 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export default function SkillsContent() {
-  const skillCategories = [
-    {
-      category: "Frontend",
-      skills: ["JavaScript", "TypeScript", "React.js", "HTML/CSS", "Tailwind CSS"],
-    },
-    {
-      category: "Backend",
-      skills: ["Node.js", "PHP", "Laravel", "RESTful APIs"],
-    },
-    {
-      category: "Database",
-      skills: ["MySQL", "PostgreSQL", "MsSQL", "MongoDB"],
-    },
-    {
-      category: "Cloud & DevOps",
-      skills: ["AWS", "GitHub Actions", "Docker", "CI/CD"],
-    },
-    {
-      category: "Tools & Methodologies",
-      skills: ["Git", "Agile", "Postman", "Scrum", "JIRA", "Figma"],
-    },
-  ]
+  
+const skillCategories = [
+  {
+    category: "Project Management",
+    skills: [
+      "Agile & Scrum",
+      "SDLC Management",
+      "Sprint Planning",
+      "Requirements Gathering",
+      "Stakeholder Management",
+      "Risk Mitigation",
+      "Backlog Management",
+      "Project Coordination",
+    ],
+  },
+  {
+    category: "Software Engineering",
+    skills: [
+      "PHP",
+      "Laravel",
+      "JavaScript",
+      "React.js",
+      "Node.js",
+      "RESTful APIs",
+      "SQL",
+      "Python",
+    ],
+  },
+  {
+    category: "Tools & Technologies",
+    skills: [
+      "JIRA",
+      "Confluence",
+      "Postman",
+      "Figma",
+      "Git",
+      "AWS",
+      "Linux",
+      "Microsoft Office",
+    ],
+  },
+  {
+    category: "SEO & Digital Marketing",
+    skills: [
+      "Technical SEO",
+      "On-Page SEO",
+      "Keyword Research",
+      "Content Strategy",
+      "Google Search Console",
+      "Google Analytics",
+      "Organic Growth",
+      "Performance Monitoring",
+    ],
+  },
+  {
+    category: "Business & Client Management",
+    skills: [
+      "Client Communication",
+      "Client Relationship Management",
+      "Business Requirements",
+      "Cross-functional Collaboration",
+      "Expectation Management",
+      "Team Coordination",
+      "Technical Documentation",
+    ],
+  },
+  {
+    category: "Technical & Analytical Skills",
+    skills: [
+      "API Development",
+      "System Integration",
+      "Database Management",
+      "SQL Query Optimization",
+      "Performance Optimization",
+      "Debugging & Troubleshooting",
+      "Data Analysis",
+      "System Modernization",
+    ],
+  },
+];
 
   return (
     <div>
