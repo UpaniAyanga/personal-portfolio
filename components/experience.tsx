@@ -4,23 +4,23 @@ import Skills from "./skills-content"
 
 export default function Experience() {
   const experiences = [
-    // {
-    //   title: "Co-Founder & Project Manager",
-    //   company: "Beyond Tech, Sri Lanka",
-    //   period: "June 2025 - Present",
-    //   location: "Sri Lanka",
-    //   logo: "/logos/beyond-tech.png",
-    //   link: "https://beyondtech.com.lk/",
-    //   achievements: [
-    //     "Successfully launched a tech startup focused on innovative software solutions",
-    //     "Currently working with 2 major clients, delivering high-quality software products",
-    //     "Developed and managed multiple projects from concept to completion, ensuring alignment with business goals",
-    //     "Designed and implemented solutions that consistently exceeded performance benchmarks",
-    //     "Streamlined project planning by working closely with stakeholders to define clear requirements and deliverables",
-    //     "Orchestrated the successful release of major application versions",
-    //     "Emerged as the primary point of contact for both project stakeholders and management",
-    //   ],
-    // },
+ {
+  title: "Search Engine Optimization Executive",
+  company: "Port City BPO, Colombo",
+  period: "February 2026 - Present",
+  location: "Colombo, Sri Lanka",
+  logo: "/logos/portcity-logo.png",
+  link: "https://portcitybpo.lk/",
+  achievements: [
+    "Managed cross-functional teams of web developers and SEO executives, coordinating task allocation and project delivery",
+    "Served as the primary point of contact for clients, managing requirements, expectations, and project updates",
+    "Planned and monitored SEO activities, including keyword research, on-page optimization, technical SEO, and content strategy",
+    "Managed website optimization and WordPress operations, including content updates, plugin management, theme customization, and performance improvements",
+    "Collaborated with content writers to develop SEO-friendly content aligned with search intent and business objectives",
+    "Monitored and reported organic traffic, keyword rankings, SERP visibility, and overall website health",
+    "Coordinated website improvements to increase organic traffic and search visibility across multiple websites",
+  ],
+},
     {
       title: "Associate Software Engineer",
       period: "Nov 2023 - Nov 2025",
