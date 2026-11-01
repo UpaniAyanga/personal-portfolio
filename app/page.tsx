@@ -8,9 +8,9 @@ import Contact from "@/components/contact"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Upani Lokusuriya | Software Engineer",
+  title: "Upani Lokusuriya | Project Manager & Software Engineer",
   description:
-    "Portfolio of Upani Lokusuriya, a software engineer specializing in JavaScript, TypeScript, React.js, Node.js, Laravel, and AWS.",
+    "Upani Lokusuriya is a software engineer and project manager specializing in software development, digital project delivery, SEO, and building scalable digital solutions.",
 }
 
 export default function Home() {
