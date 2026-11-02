@@ -7,7 +7,7 @@ import Link from "next/link"
 import React, { useEffect, useRef, useState } from "react"
 
 // Defined outside the component so the typing effect doesn't restart on every render
-const SENTENCES = ["Stratergy to Successful Delivery"]
+const SENTENCES = ["Strategy to Successful Delivery"]
 
 const BADGES = [
   {
@@ -31,7 +31,6 @@ export default function Hero() {
 
   const imageRef = useRef<HTMLDivElement>(null)
   const contentRef = useRef<HTMLDivElement>(null)
-  const cueRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     setMounted(true)
@@ -62,44 +61,39 @@ export default function Hero() {
     return () => clearTimeout(timeout)
   }, [charIndex, isDeleting, sentenceIndex])
 
-  // Scroll-linked motion: the portrait drifts, tilts and shrinks slightly as you
-  // scroll away, while the text lifts and fades. Writes straight to styles inside
-  // requestAnimationFrame, so scrolling never triggers React re-renders.
   useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return
 
-    let frame = 0
+  let frame = 0
 
-    const update = () => {
-      frame = 0
-      const y = Math.min(window.scrollY, window.innerHeight)
-      const p = y / window.innerHeight // 0 → 1 across the first viewport
+  const update = () => {
+    frame = 0
+    const y = Math.min(window.scrollY, window.innerHeight)
+    const p = y / window.innerHeight
 
-      if (imageRef.current) {
-        imageRef.current.style.transform = `translate3d(0, ${y * 0.14}px, 0) rotate(${
-          p * 8
-        }deg) scale(${1 - p * 0.1})`
-      }
-      if (contentRef.current) {
-        contentRef.current.style.transform = `translate3d(0, ${-y * 0.07}px, 0)`
-        contentRef.current.style.opacity = String(Math.max(0, 1 - p * 1.15))
-      }
-      if (cueRef.current) {
-        cueRef.current.style.opacity = String(Math.max(0, 1 - p * 5))
-      }
+    if (imageRef.current) {
+      imageRef.current.style.transform = `translate3d(0, ${y * 0.14}px, 0) rotate(${
+        p * 8
+      }deg) scale(${1 - p * 0.1})`
     }
 
-    const onScroll = () => {
-      if (!frame) frame = requestAnimationFrame(update)
+    if (contentRef.current) {
+      contentRef.current.style.transform = `translate3d(0, ${-y * 0.07}px, 0)`
     }
+  }
 
-    update()
-    window.addEventListener("scroll", onScroll, { passive: true })
-    return () => {
-      window.removeEventListener("scroll", onScroll)
-      if (frame) cancelAnimationFrame(frame)
-    }
-  }, [])
+  const onScroll = () => {
+    if (!frame) frame = requestAnimationFrame(update)
+  }
+
+  update()
+  window.addEventListener("scroll", onScroll, { passive: true })
+
+  return () => {
+    window.removeEventListener("scroll", onScroll)
+    if (frame) cancelAnimationFrame(frame)
+  }
+}, [])
 
   return (
     <section
@@ -143,7 +137,7 @@ export default function Hero() {
                 className="rise text-2xl font-light text-muted-foreground md:text-3xl"
                 style={{ ["--d" as string]: "0.85s" }}
               >
-                {mounted ? text : "Stratergy to Successful Deliver"}
+                {mounted ? text : "Strategy to Successful Deliver"}
                 <span className="cursor">|</span>
               </p>
             </div>
