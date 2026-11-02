@@ -11,7 +11,18 @@ export const metadata: Metadata = {
   title: "Upani Lokusuriya | Project Manager & Software Engineer",
   description:
     "Upani Lokusuriya is a software engineer and project manager specializing in software development, digital project delivery, SEO, and building scalable digital solutions.",
-}
+   verification: {
+    google: "_ORzhivXvIafMo3-psxK3vbLL_qnvGyDPLx_N8mNxX4",
+  },
+  alternates: {
+    canonical: "/",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+  }
 
 export default function Home() {
   return (
