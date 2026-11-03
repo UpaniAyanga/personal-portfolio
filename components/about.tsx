@@ -28,8 +28,8 @@ export default function About() {
 
   return (
     <div className="w-full bg-muted/30">
-      <section id="about" className="py-20 w-full">
-        <div className="container px-4 md:px-6 mx-auto">
+      <section id="about" className="py-20">
+        <div className="section-container">
           <div className="space-y-12">
             <div className="space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>

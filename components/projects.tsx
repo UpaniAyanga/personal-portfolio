@@ -72,7 +72,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-20">
-      <div className="container px-4 md:px-6 mx-auto">
+      <div className="section-container">
         <div className="space-y-12">
           
           {/* Section Header */}

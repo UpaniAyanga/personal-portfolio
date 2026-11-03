@@ -18,18 +18,12 @@ export default function Contact() {
       value: "Colombo, Sri Lanka",
       link: "https://maps.google.com/?q=Colombo,Sri+Lanka",
     },
-    {
-      icon: <Phone className="h-6 w-6 text-primary" />,
-      title: "Phone",
-      value: "Available on request",
-      link: null,
-    },
   ]
 
   return (
     <div className="w-full bg-muted/30">
       <section id="contact" className="py-20">
-        <div className="container px-4 md:px-6 mx-auto">
+        <div className="section-container">
           <div className="space-y-12">
             <div className="space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get In Touch</h2>
@@ -38,9 +32,9 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
-              <div className="lg:col-span-2">
-                <Card>
+            <div className="mt-12 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
+              <div className="flex lg:col-span-2">
+                <Card className="w-full">
                   <CardContent className="p-6">
                     <form action="https://formspree.io/f/meejqooq" method="POST" className="space-y-6">
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -88,9 +82,9 @@ export default function Contact() {
                 </Card>
               </div>
 
-              <div className="space-y-6">
+              <div className="grid h-full grid-rows-3 gap-6">
                 {contactInfo.map((info, index) => (
-                  <Card key={index} className="overflow-hidden">
+                  <Card key={index} className="h-full overflow-hidden">
                     <CardContent className="p-6 flex items-start gap-4">
                       <div className="bg-primary/10 p-3 rounded-full mt-1">{info.icon}</div>
                       <div>
@@ -112,7 +106,7 @@ export default function Contact() {
                   </Card>
                 ))}
 
-                <Card>
+                <Card className="h-full">
                   <CardContent className="p-6">
                     <h3 className="font-medium mb-2">Connect with me</h3>
                     <p className="text-sm text-muted-foreground mb-4">Find me on these platforms</p>
